@@ -1,15 +1,26 @@
-const input = document.querySelector('input')
+const btn = document.querySelector('btn')
 
-function checkEmailOrPhonenumber (input){
-    if (!valueInput) throw new Error('input is empty');
-    if (!/^\+[0-9]{3}\([0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}/g.test(value)) throw new Error('incorrect format');
-    return true
+function checkFirstInput(emailPhonenumber) {
+    if (!/^([a-zA-Z0-9\.\_\-]+@[a-z]+\.[a-z]{1,3})|(\+[0-9]{12})$/g.test(emailPhonenumber.value)) throw new Error('login failed');
+    if (!emailPhonenumber.value) throw new Error('enter email or phone number');
 }
 
-input.addEventListener('oninput', (event)=>{
-try {
-    
-} catch (error) {
-    alert(error.message)
+function checkPassword(password) {
+    if (!/^\w{8,}$/g.test(password.value)) throw new Error('login failed');
+    if (!password.value) throw new Error('enter password');
 }
+
+
+
+btn.addEventListener('click', () => {
+    const emailPhonenumber = document.querySelector('.input-email')
+    const password = document.querySelector('.input-password')
+
+    try {
+        checkFirstInput(emailPhonenumber)
+        checkPassword(password)
+        alert('login successful')
+    } catch (error) {
+        alert(error.message)
+    }
 })
