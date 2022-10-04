@@ -11,13 +11,17 @@ function checkPassword(password) {
 }
 
 btn.addEventListener('click', () => {
+    const emailPhonenumber = document.querySelector('.input-email')
+    const password = document.querySelector('.input-password')
     try {
-        const emailPhonenumber = document.querySelector('.input-email')
-        const password = document.querySelector('.input-password')
         checkFirstInput(emailPhonenumber)
         checkPassword(password)
         alert('login successful')
+        password.value = ''
+        emailPhonenumber.value = ''
     } catch (error) {
         alert(error.message)
+        password.value = ''
+        emailPhonenumber.value = ''
     }
 })
