@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Poppins';
     src: local('Poppins'),
-        url(./fonts/Poppins-Regular.ttf) format('truetype');
+        url(../fonts/Poppins-Regular.ttf) format('truetype');
 }
 
 /* @font-face {
@@ -39,12 +39,11 @@ main {
 }
 
 .onboarding-img {
-    background-image: url(./assets/1.svg);
+    background-image: url(../assets/1.svg);
     width: 524px;
     height: 391px;
     background-repeat: no-repeat;
-    margin-top: 150px;
-    margin-left: 150px;
+    margin:  150px auto auto auto;
 
 }
 
@@ -53,9 +52,9 @@ main {
     font-size: 26px;
     text-align: center;
     color: #292731;
-    margin-top: 20px;
     width: 400px;
-    margin-left: 230px;
+    margin:  20px auto auto auto;
+
 }
 
 .left-side p {
@@ -63,10 +62,8 @@ main {
     font-size: 16px;
     text-align: center;
     color: #455360;
-    margin-top: 15px;
     width: 386px;
-    margin-left: 230px;
-
+    margin:  15px auto auto auto;
 }
 
 .right-side {
@@ -76,7 +73,7 @@ main {
 }
 
 .hi-img {
-    background-image: url(./assets/waving-hand.svg);
+    background-image: url(../assets/waving-hand.svg);
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
@@ -116,7 +113,7 @@ main {
 }
 
 .icon-img {
-    background-image: url(./assets/information.svg);
+    background-image: url(../assets/information.svg);
     width: 16px;
     height: 16px;
     margin-top: 30px;
@@ -132,7 +129,7 @@ main {
     border: 0.8px solid #ECF2F7;
 }
 
-.explore-btn {
+.btn {
     background: #4C70FF;
     border-radius: 8px;
     padding: 12px 10px;
@@ -156,6 +153,7 @@ main {
 
 }
 
-.paragraf p span {
+.paragraf a {
+    text-decoration:none ;
     color: #78cad7
 }
