@@ -113,14 +113,8 @@ main {
 }
 
 .icon-img {
-<<<<<<< HEAD
     background-image: url(../assets/information.svg);
     width: 16px;
-=======
-    background-image: url(./assets/information.svg);
-    background-repeat: no-repeat;
-    width: 20px;
->>>>>>> 2b9dda172f1f2fb379f819e599181e163face397
     height: 16px;
     margin-top: 30px;
     margin-right: 300px;
