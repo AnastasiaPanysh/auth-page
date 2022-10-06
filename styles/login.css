@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'),
+        url(../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+/* @font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'),
+        url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'),
+        url(./fonts/Poppins-Bold.ttf) format('truetype');
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    height: 1500px;
+}
+
+.left-side {
+    width: 50%;
+    background: #E2F0FF;
+}
+
+.onboarding-img {
+    background-image: url(../assets/1.svg);
+    width: 524px;
+    height: 391px;
+    background-repeat: no-repeat;
+    margin:  150px auto auto auto;
+
+}
+
+.left-side h2 {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #292731;
+    width: 400px;
+    margin:  20px auto auto auto;
+
+}
+
+.left-side p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #455360;
+    width: 386px;
+    margin:  15px auto auto auto;
+}
+
+.right-side {
+    background: #F5F5F5;
+    width: 50%;
+    margin-left: 0;
+}
+
+.hi-img {
+    background-image: url(../assets/waving-hand.svg);
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.right-side h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #292731;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.right-side p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #292731;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #455360;
+    margin-left: 150px;
+}
+
+.icon-img {
+    background-image: url(../assets/information.svg);
+    width: 16px;
+    height: 16px;
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+.input-email,
+.input-password{
+    padding-left: 10px;
+}
+
+.container-password input,
+.container-email input {
+    margin-left: 150px;
+    width: 440px;
+    height: 48px;
+    background: #ECF2F7;
+    border: 0.8px solid #ECF2F7;
+}
+
+.btn {
+    background: #4C70FF;
+    border-radius: 8px;
+    padding: 12px 10px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 425px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.paragraf {
+    display: flex;
+}
+
+.paragraf p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #292731;
+    margin-left: 250px;
+
+}
+
+.paragraf a {
+    text-decoration:none ;
+    color: #78cad7
+}

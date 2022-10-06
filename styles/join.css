@@ -120,8 +120,15 @@ main {
     margin-right: 300px;
 }
 
+.input-email,
+.input-password,
+.input-confirm{
+    padding-left: 10px;
+}
+
 .container-password input,
-.container-email input {
+.container-email input,
+.container-confirm input {
     margin-left: 150px;
     width: 440px;
     height: 48px;
