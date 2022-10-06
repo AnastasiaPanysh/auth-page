@@ -5,11 +5,6 @@ function checkFirstInput(emailPhonenumber) {
     if (!emailPhonenumber.value) throw new Error('enter email or phone number');
 }
 
-function checkPassword(password) {
-    if (!/^\w{8,}$/g.test(password.value)) throw new Error('login failed');
-    if (!password.value) throw new Error('enter password');
-}
-
 function checkConfirm(confirm) {
     if (confirm.value !== password.value) throw new Error('password did not match');
     if (!confirm.value) throw new Error('enter password');
@@ -24,7 +19,6 @@ btn.addEventListener('click', () => {
 
     try {
         checkFirstInput(emailPhone)
-        checkPassword(password)
         checkConfirm(confirm)
         alert('login successful')
         emailPhone.value = ''
