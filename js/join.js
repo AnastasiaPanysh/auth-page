@@ -1,3 +1,14 @@
+const iconInf = document.querySelector('.icon-img');
+const information = document.querySelector('.info')
+iconInf.addEventListener('mouseover', () => {
+    information.hidden = false;
+});
+
+iconInf.addEventListener('mouseout', () => {
+    information.hidden = true;
+});
+
+
 const btn = document.querySelector('.btn');
 
 function checkFirstInput(emailPhonenumber) {
