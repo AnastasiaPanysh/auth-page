@@ -7,14 +7,14 @@
 @font-face {
     font-family: 'Poppins';
     src: local('Poppins'),
-        url(./fonts/Poppins-Medium.ttf) format('truetype');
+        url(../fonts/Poppins-Medium.ttf) format('truetype');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Poppins';
     src: local('Poppins'),
-        url(./fonts/Poppins-Bold.ttf) format('truetype');
-}
+        url(../fonts/Poppins-Bold.ttf) format('truetype');
+} */
 
 
 * {
@@ -52,7 +52,7 @@ main {
     font-size: 26px;
     text-align: center;
     color: #292731;
-    width: 400px;
+    width: 55%;
     margin: 20px auto auto auto;
 
 }
@@ -62,7 +62,7 @@ main {
     font-size: 16px;
     text-align: center;
     color: #455360;
-    width: 386px;
+    width: 57%;
     margin: 15px auto auto auto;
 }
 
@@ -100,7 +100,6 @@ main {
 .login {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .login p {
@@ -110,6 +109,7 @@ main {
     line-height: 24px;
     color: #455360;
     margin-left: 150px;
+    padding-right: 10px;
 }
 
 .icon-img {
@@ -117,7 +117,7 @@ main {
     width: 16px;
     height: 16px;
     margin-top: 30px;
-    margin-right: 300px;
+    background-repeat: no-repeat;
 }
 
 .info {
@@ -139,7 +139,7 @@ main {
 .container-password input,
 .container-email input {
     margin-left: 150px;
-    width: 440px;
+    width: 50%;
     height: 48px;
     background: #ECF2F7;
     border: 0.8px solid #ECF2F7;
@@ -151,7 +151,7 @@ main {
     padding: 12px 10px;
     text-align: center;
     color: #FFFFFF;
-    width: 425px;
+    width: 50%;
     margin-left: 150px;
     margin-top: 30px;
 }
@@ -165,11 +165,42 @@ main {
     font-size: 16px;
     line-height: 24px;
     color: #292731;
-    margin-left: 250px;
+    margin-left: 200px;
 
 }
 
 .paragraf a {
     text-decoration: none;
     color: #78cad7
+}
+
+@media screen and (max-width: 600px) {
+    .left-side h2 {
+        font-size: 20px;
+    }
+
+    .left-side p {
+        font-size: 15px;
+    }
+
+    .onboarding-img {
+        display: none;
+    }
+
+    .hi-img {
+        margin-top: 10%;
+    }
+
+    .right-side h1,
+    .right-side p {
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .container-password input,
+    .container-email input,
+    .btn {
+        width: 100%;
+        margin-left: auto;
+    }
 }
