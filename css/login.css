@@ -7,15 +7,8 @@
 @font-face {
     font-family: 'Poppins';
     src: local('Poppins'),
-        url(./fonts/Poppins-Medium.ttf) format('truetype');
+        url(../fonts/Poppins-Medium.ttf) format('truetype');
 }
-
-@font-face {
-    font-family: 'Poppins';
-    src: local('Poppins'),
-        url(./fonts/Poppins-Bold.ttf) format('truetype');
-}
-
 
 * {
     margin: 0;
@@ -52,7 +45,7 @@ main {
     font-size: 26px;
     text-align: center;
     color: #292731;
-    width: 400px;
+    width: 55%;
     margin: 20px auto auto auto;
 
 }
@@ -62,7 +55,7 @@ main {
     font-size: 16px;
     text-align: center;
     color: #455360;
-    width: 386px;
+    width: 57%;
     margin: 15px auto auto auto;
 }
 
@@ -77,30 +70,26 @@ main {
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
-    margin-top: 150px;
-    margin-left: 150px;
+    margin: 150px 0 0 150px;
 }
 
 .right-side h1 {
     font-weight: 600;
     font-size: 30px;
     color: #292731;
-    margin-top: 20px;
-    margin-left: 150px;
+    margin: 20px 0 0 150px;
 }
 
 .right-side p {
     font-weight: 400;
     font-size: 16px;
     color: #292731;
-    margin-top: 30px;
-    margin-left: 150px;
+    margin: 30px 0 0 150px;
 }
 
 .login {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .login p {
@@ -110,6 +99,7 @@ main {
     line-height: 24px;
     color: #455360;
     margin-left: 150px;
+    padding-right: 10px;
 }
 
 .icon-img {
@@ -117,7 +107,7 @@ main {
     width: 16px;
     height: 16px;
     margin-top: 30px;
-    margin-right: 300px;
+    background-repeat: no-repeat;
 }
 
 .info {
@@ -131,18 +121,15 @@ main {
     color: #455360;
 }
 
-
 .input-email,
-.input-password,
-.input-confirm {
+.input-password {
     padding-left: 10px;
 }
 
 .container-password input,
-.container-email input,
-.container-confirm input {
+.container-email input {
     margin-left: 150px;
-    width: 440px;
+    width: 50%;
     height: 48px;
     background: #ECF2F7;
     border: 0.8px solid #ECF2F7;
@@ -154,9 +141,8 @@ main {
     padding: 12px 10px;
     text-align: center;
     color: #FFFFFF;
-    width: 425px;
-    margin-left: 150px;
-    margin-top: 30px;
+    width: 50%;
+    margin: 30px 0 0 150px;
 }
 
 .paragraf {
@@ -168,11 +154,42 @@ main {
     font-size: 16px;
     line-height: 24px;
     color: #292731;
-    margin-left: 250px;
+    margin-left: 200px;
 
 }
 
 .paragraf a {
     text-decoration: none;
     color: #78cad7
+}
+
+@media screen and (max-width: 600px) {
+    .left-side h2 {
+        font-size: 20px;
+    }
+
+    .left-side p {
+        font-size: 15px;
+    }
+
+    .onboarding-img {
+        display: none;
+    }
+
+    .hi-img {
+        margin-top: 10%;
+    }
+
+    .right-side h1,
+    .right-side p {
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .container-password input,
+    .container-email input,
+    .btn {
+        width: 100%;
+        margin-left: auto;
+    }
 }
