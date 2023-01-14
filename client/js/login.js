@@ -17,7 +17,7 @@ class Login {
         });
     }
 
-    checkFirstInput(emailPhonenumber) {
+    checkLogin(emailPhonenumber) {
         if (!/^([a-zA-Z0-9\.\_\-]+@[a-z]+\.[a-z]{1,3})||(\+[0-9]{12})$/g.test(emailPhonenumber.value)) throw new Error('login failed');
         if (!emailPhonenumber.value) throw new Error('enter email or phone number');
     }
@@ -32,8 +32,11 @@ class Login {
             const emailPhone = document.querySelector('.input-email');
             const password = document.querySelector('.input-password');
             try {
-                this.checkFirstInput(emailPhone)
+                this.checkLogin(emailPhone)
                 this.checkPassword(password)
+
+                fetch
+
                 alert('login successful')
                 emailPhone.value = ''
                 password.value = ''
